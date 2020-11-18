@@ -1,0 +1,20 @@
+.btn img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  position: relative;
+}
+
+.innerBox {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
