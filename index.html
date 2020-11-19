@@ -10,6 +10,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="node_modules/select2/dist/css/select2.css">
   </head>
   <body>
     <div class="container py-5">
@@ -27,15 +28,21 @@
       </form>
 
       <div id="results" class="row"></div>
-      <label for="movieInput">Enter Location</label>
-      <input
-        type="text"
-        class="form-control"
-        id="cityInput"
-        placeholder="Enter location"
-      />
-    </div>
-    <div id="locationResults"></div>
+
+      <h2>Markdown-it</h2>
+
+      <textarea class="form-control" id="editor" rows="4"></textarea>
+      <div id="preview"></div>
+
+      <h2>Select2</h2>
+
+      <select class="select2" name="country">
+        <option value="AL">Alabama</option>
+        <option value="WY">Wyoming</option>
+        <option value="MI">Mississipi</option>
+        <option value="TX">Texas</option>
+      </select>
+
     <script src="main.js"></script>
   </body>
 </html>
